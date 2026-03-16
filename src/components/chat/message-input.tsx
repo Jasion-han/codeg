@@ -1212,10 +1212,8 @@ export function MessageInput({
         </div>
       )}
       <div
-        className={cn(
-          "pointer-events-none absolute left-px right-3 bottom-px z-10 rounded-bl-xl bg-background",
-          "h-14"
-        )}
+        className="pointer-events-none absolute left-px right-3 bottom-px z-10 rounded-bl-xl bg-background"
+        style={{ height: bottomPaddingPx }}
         aria-hidden="true"
       />
       <div className="@container absolute left-2 right-24 bottom-2 z-20">
