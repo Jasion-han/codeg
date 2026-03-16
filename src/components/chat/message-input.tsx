@@ -1131,6 +1131,10 @@ export function MessageInput({
           onSelect={handleSlashSelect}
         />
       )}
+      <div
+        className="pointer-events-none absolute inset-0 rounded-xl bg-background"
+        aria-hidden="true"
+      />
       <Textarea
         ref={textareaRef}
         value={text}
