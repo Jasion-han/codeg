@@ -1142,7 +1142,7 @@ export function MessageInput({
         onFocus={onFocus}
         placeholder={resolvedPlaceholder}
         className={cn(
-          "text-sm pr-12 resize-none",
+          "text-sm pr-12 resize-none bg-background",
           showDragActive && "ring-1 ring-primary/40",
           topPaddingClass,
           bottomPaddingClass,
@@ -1213,7 +1213,7 @@ export function MessageInput({
       )}
       <div
         className={cn(
-          "pointer-events-none absolute left-px right-3 bottom-px z-10 rounded-bl-xl bg-input/30",
+          "pointer-events-none absolute left-px right-3 bottom-px z-10 rounded-bl-xl bg-background",
           bottomPaddingClass
         )}
         aria-hidden="true"
