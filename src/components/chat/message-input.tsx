@@ -1131,10 +1131,6 @@ export function MessageInput({
           onSelect={handleSlashSelect}
         />
       )}
-      <div
-        className="pointer-events-none absolute inset-0 rounded-xl bg-background"
-        aria-hidden="true"
-      />
       <Textarea
         ref={textareaRef}
         value={text}
@@ -1146,7 +1142,7 @@ export function MessageInput({
         onFocus={onFocus}
         placeholder={resolvedPlaceholder}
         className={cn(
-          "text-sm pr-12 resize-none bg-transparent",
+          "text-sm pr-12 resize-none",
           showDragActive && "ring-1 ring-primary/40",
           topPaddingClass,
           bottomPaddingClass,
@@ -1217,7 +1213,7 @@ export function MessageInput({
       )}
       <div
         className={cn(
-          "pointer-events-none absolute left-px right-3 bottom-px z-10 rounded-bl-xl bg-background",
+          "pointer-events-none absolute left-px right-3 bottom-px z-10 rounded-bl-xl bg-input/30",
           bottomPaddingClass
         )}
         aria-hidden="true"
